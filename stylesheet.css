@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital@1&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:whitesmoke;
+    
+}
+
+
+header {
+    display:inline;
+
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 30px;
+    background-color:rgb(201, 28, 22);
+    text-align:center;
+    
+    
+}
+.jumbotron >h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 50px ;
+    padding :20px;
+    margin:auto;
+    color: rgba(0, 0, 0, 0.726);
+    
+}
+.jumbotron >p {
+    font-size: 23px;
+    padding : 0 10px;
+}
+
+nav {
+    background-color: rgb(255, 123, 0);
+    display:flex;
+    flex-direction: row;
+    margin: 0 0 5px 0;
+    position: sticky;
+    top:0;
+    text-align:center;
+}
+nav a {
+    background-color:  rgb(255, 123, 0);
+    height:70px;
+    line-height:70px;
+    display:block;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    width: 25%;
+    max-width: 500px;
+    border: 1px dotted rgb(207, 19, 19);
+    
+}
+nav a:hover {
+    background-color:  rgb(255, 123, 0);
+    color: maroon;
+}
+
+main {
+    overflow:auto;
+}
+
+#content {
+    float:left;
+    background-image: url(image/bg-main.jpg);
+    background-position: left;
+    width:75%;
+    border:6px solid darkred;
+    border-radius: 15px;
+    text-align:center;
+    padding:20px;
+    
+}
+#content > h1{
+    padding-top: 30px;
+    text-align: center;
+    text-decoration-line:underline;
+    
+    
+}
+#content img {
+    width:30%;
+}
+#content p {
+    font-size: 1em;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+#bebek {
+   float:left;
+    width:48%;
+    margin:0 20px 0 0;
+    
+}
+
+#ayam {
+    float:left;
+    width: 48%;
+    
+}
+
+.bebek {
+  
+    border-radius: 10px;    
+    border:6px solid maroon;
+    margin: 30px 0px;
+    padding:0 10px;
+    height:340px;
+    
+}
+
+.bebek img {
+    box-shadow: 0px 0px 4px 4px rgba(168,0,8,1);  
+    border-radius: 4px;
+    border:6px solid orangered;
+}
+
+.ayam {
+    border-radius: 10px;
+    border:6px solid maroon;
+    margin: 30px 0px;
+    padding:0 10px;
+    height:340px;
+   
+}
+.ayam img {
+    box-shadow: 0px 0px 2px 4px rgba(168,0,8,1);  
+    border-radius: 4px;
+    border:6px solid orangered;
+}
+
+
+
+
+aside {
+    
+    float:right;
+    background-color: rgba(252, 172, 0, 0.753);
+    width: 20%;
+    
+    margin:20px 30px;
+    padding:20px;
+    border: 6px solid darkred;
+
+}
+aside img {
+    width:75%;
+}
+
+#owner {
+    background-color:rgb(255, 123, 0);
+    border-radius: 10px;
+    text-align: center;
+}
+#owner img {
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
+#owner p {
+    padding-bottom:20px;
+    font-size:15px;
+    font-weight: bold;
+}
+
+#resto {
+    background-color:rgb(255, 123, 0);
+    border-radius: 10px;
+    font-size:15px;
+    padding:10px 10px 20px 10px;
+    text-align: center;
+}
+#resto img {
+    width:100%;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+td, th {
+    border: 3px solid maroon;
+    text-align: center;
+    padding: 8px;
+  }
+
+#kritik-saran {
+    margin-top:50px;
+}
+
+
+footer  {
+    background-color:rgb(201, 28, 22);
+    height:100px;
+    padding-top:5px;
+    margin-top: 5px;
+    text-align:center;
+}
+
+footer p.made {
+    font-size: 20px;    
+}
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 1215px) {
+
+    #content
+    {
+        width: 100%;
+        padding: 50px;
+        margin-bottom:20px;
+    }
+
+    aside { 
+        width: 100%;
+        margin:0 auto;
+        
+    }
+    #owner img {
+        width:30%;
+    }
+ }
+
+ @media screen and (max-width: 725px) {
+
+    .jumbotron p {
+        font-size: 15px;
+
+    }
+
+    nav a{
+        font-size: 0.7em;
+    }
+    #content
+    {
+        width: 100%;
+        padding: 50px;
+        margin-bottom:20px;
+        font-size: 0.8em;
+
+    }
+    
+    #bebek {
+        width:100%;
+        padding-top:20px;
+    }
+
+    #ayam {
+        width:100%;
+        padding-top:30px;
+    }
+
+    .bebek p {
+        padding-top: 20px;
+       
+        
+    }
+    .ayam p {
+        padding-top: 20px;
+        
+    }
+
+    aside { 
+        width: 100%;
+        margin:0 auto;
+        
+    }
+ }
+
+ @media screen and (max-width: 426px) {
+    nav a{
+        font-size: 0.6em;
+    }
+
+    
+    #content img {
+    width:44%;
+    }
+    #owner img {
+        width:50%;
+    }
+}
